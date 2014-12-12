@@ -1,0 +1,10 @@
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Domain\bin\Debug\Mappings\Order.hbm.xml
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Domain\bin\Debug\NHibernate.Domain.dll
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Domain\bin\Debug\NHibernate.Domain.pdb
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Domain\bin\Debug\Castle.Core.dll
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Domain\bin\Debug\Iesi.Collections.dll
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Domain\bin\Debug\Castle.Core.xml
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Domain\bin\Debug\Iesi.Collections.xml
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Domain\obj\Debug\NHibernate.Domain.dll
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Domain\obj\Debug\NHibernate.Domain.pdb
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Domain\obj\Debug\NHibernate.Domain.csprojResolveAssemblyReference.cache

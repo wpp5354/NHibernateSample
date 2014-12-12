@@ -1,0 +1,15 @@
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Data.Test\bin\Debug\Mappings\Order.hbm.xml
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Data.Test\bin\Debug\NHibernate.Data.Test.dll
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Data.Test\bin\Debug\NHibernate.Data.Test.pdb
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Data.Test\bin\Debug\Iesi.Collections.dll
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Data.Test\bin\Debug\NHibernate.dll
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Data.Test\bin\Debug\NHibernate.Domain.dll
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Data.Test\bin\Debug\NHibernateSample.dll
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Data.Test\bin\Debug\HibernatingRhinos.Profiler.Appender.v4.0.dll
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Data.Test\bin\Debug\NHibernate.Domain.pdb
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Data.Test\bin\Debug\NHibernateSample.pdb
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Data.Test\bin\Debug\Iesi.Collections.xml
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Data.Test\bin\Debug\NHibernate.xml
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Data.Test\obj\Debug\NHibernate.Data.Test.csprojResolveAssemblyReference.cache
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Data.Test\obj\Debug\NHibernate.Data.Test.dll
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Data.Test\obj\Debug\NHibernate.Data.Test.pdb

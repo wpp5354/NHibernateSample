@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "主页";
+}
+
+<h2>@ViewBag.Message</h2>
+<p>
+    @Html.ActionLink("添加", "AddCustomer")
+    @Html.ActionLink("查询", "Search")
+    @Html.ActionLink("测试并发", "Test")
+    @Html.ActionLink("添加订单", "AddOrder")
+    @Html.ActionLink("级联删除", "DelCustomer")
+</p>

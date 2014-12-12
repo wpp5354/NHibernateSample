@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--assembly:程序集，namespace:命名空间-->
+<hibernate-mapping  xmlns="urn:nhibernate-mapping-2.2" assembly="NHibernate.Domain"  namespace="NHibernate.Domain.Entities">
+  <class name="NHibernate.Domain.Entities.Customer,NHibernate.Domain" table="Customer">
+    <!--主键-->
+    <id name="Id" type="Guid" unsaved-value="null">
+      <column name="CustomerID" sql-type="uniqueidentifier" not-null="true" unique="true"/>
+      <generator class="assigned"></generator>
+    </id>
+    <version name="Version" column="Version" type="integer"  unsaved-value="0"/>
+    <property name="LastName" type="String">
+      <column name="LastName" sql-type="nvarchar"  not-null="false"/>
+    </property>
+    <component name="NameAddress" class="NHibernate.Domain.Entities.Name,NHibernate.Domain">
+      <property name="CustomerAddress" column="Address" type="String" not-null="false"/>
+      <property name="FirstName" column="FirstName" type="String" not-null="false"/>
+    </component>
+    <!--子实体负责维护关联关系-->
+    <set name="orders" table="Orders" generic="true" inverse="true" cascade="all">
+      <key column="CustomerId" foreign-key="FK_Customer_Customer"></key>
+      <one-to-many class="NHibernate.Domain.Entities.Orders,NHibernate.Domain"/>
+    </set>
+  </class>
+</hibernate-mapping>

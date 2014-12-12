@@ -1,0 +1,15 @@
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Business\bin\Debug\Mappings\Order.hbm.xml
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Business\bin\Debug\NHibernate.Business.dll
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Business\bin\Debug\NHibernate.Business.pdb
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Business\bin\Debug\Iesi.Collections.dll
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Business\bin\Debug\NHibernate.dll
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Business\bin\Debug\NHibernate.Domain.dll
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Business\bin\Debug\NHibernateSample.dll
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Business\bin\Debug\HibernatingRhinos.Profiler.Appender.v4.0.dll
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Business\bin\Debug\NHibernate.Domain.pdb
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Business\bin\Debug\NHibernateSample.pdb
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Business\bin\Debug\Iesi.Collections.xml
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Business\bin\Debug\NHibernate.xml
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Business\obj\Debug\NHibernate.Business.csprojResolveAssemblyReference.cache
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Business\obj\Debug\NHibernate.Business.dll
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernate.Business\obj\Debug\NHibernate.Business.pdb

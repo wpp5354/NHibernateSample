@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="NHibernate.Domain.Domain"  namespace="NHibernate.Domain.Entities">
+  <class name="NHibernate.Domain.Entities.Orders,NHibernate.Domain" table="Orders">
+    <id name="OrderId" type="Guid" unsaved-value="null">
+      <column name="OrderId" sql-type="uniqueidentifier" not-null="true" unique="true"/>
+      <generator class="assigned"></generator>
+    </id>
+    <property name="OrderDate" column="OrderDate" type="DateTime"
+              not-null="true" />
+    <!--多对一关系：Orders属于一个Customer-->
+    <many-to-one  name="customer" column="CustomerID" not-null="true"
+                 class="NHibernate.Domain.Entities.Customer,Wolfy.Shop.Domain"
+                 foreign-key="FK_Customer_Customer" />
+  </class>
+</hibernate-mapping>

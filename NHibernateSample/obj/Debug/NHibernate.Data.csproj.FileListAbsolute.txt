@@ -1,0 +1,15 @@
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernateSample\bin\Debug\Mappings\Order.hbm.xml
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernateSample\bin\Debug\NHibernateSample.dll
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernateSample\bin\Debug\NHibernateSample.pdb
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernateSample\bin\Debug\Castle.Core.dll
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernateSample\bin\Debug\HibernatingRhinos.Profiler.Appender.v4.0.dll
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernateSample\bin\Debug\Iesi.Collections.dll
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernateSample\bin\Debug\NHibernate.dll
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernateSample\bin\Debug\NHibernate.Domain.dll
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernateSample\bin\Debug\NHibernate.Domain.pdb
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernateSample\bin\Debug\Castle.Core.xml
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernateSample\bin\Debug\Iesi.Collections.xml
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernateSample\bin\Debug\NHibernate.xml
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernateSample\obj\Debug\NHibernate.Data.csprojResolveAssemblyReference.cache
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernateSample\obj\Debug\NHibernateSample.dll
+d:\documents\visual studio 2012\Projects\NHibernateSample\NHibernateSample\obj\Debug\NHibernateSample.pdb

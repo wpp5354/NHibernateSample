@@ -12,6 +12,6 @@ namespace NHibernate.Domain.Entities
         public virtual string LastName { get; set; }
         public virtual int Version { get; set; }
         public virtual Name NameAddress { get; set; }
-        public virtual ISet<Orders> orders { get; set; }
+        public virtual IList<Orders> orders { get; set; }
     }
 }

@@ -7,9 +7,17 @@
     </id>
     <property name="OrderDate" column="OrderDate" type="DateTime"
               not-null="true" />
+
     <!--多对一关系：Orders属于一个Customer-->
     <many-to-one  name="customer" column="CustomerID" not-null="true"
                  class="NHibernate.Domain.Entities.Customer,Wolfy.Shop.Domain"
                  foreign-key="FK_Customer_Customer" />
+
+    <!--多对多关系：order下有多个product-->
+    <bag name="Products" generic="true" table="OrderProduct">
+      <key column="OrderID" foreign-key="FK_OrderProduct_Order"/>
+      <many-to-many  column="ProductID" class="NHibernate.Domain.Entities.Product,NHibernate.Domain"
+       foreign-key="FK_OrderProduct_Product"/>
+    </bag>
   </class>
 </hibernate-mapping>

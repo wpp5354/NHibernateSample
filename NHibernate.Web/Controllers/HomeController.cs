@@ -15,7 +15,24 @@ namespace NHibernate.Web.Controllers
         {
             ViewBag.Message = "欢迎使用 ASP.NET MVC!";
 
-            return View();
+            CustomerBusiness cb = new CustomerBusiness();
+            OrderBusiness ob = new OrderBusiness();
+
+            //var result = cb.GetCustomersOrders(new Guid("5DE10B30-DF32-4DB9-BF9F-744B9170B52B"));
+            var result = cb.GetCustomerByLazyLoad(new Guid("5DE10B30-DF32-4DB9-BF9F-744B9170B52B"));
+
+            var order = ob.GetOrderByLazyLoad(new Guid("42AD9CA4-D443-410B-9773-13F5C2C824BD"));
+
+            decimal sum = 0;
+            foreach (var item in order.Products)
+            {
+                if (item.Cost >= 10)
+                {
+                    sum += item.Cost;
+                }
+            }
+
+            return View(result);
         }
 
         public ActionResult About()
@@ -26,7 +43,7 @@ namespace NHibernate.Web.Controllers
         public ActionResult AddCustomer()
         {
             var customer = new Customer() { Id = Guid.NewGuid(), NameAddress = new Name() { FirstName = "aaa", CustomerAddress = "bbb" }, LastName = "wp" };
-            customer.orders = new HashSet<Orders>();
+            customer.orders = new List<Orders>();
             customer.orders.Add(new Orders() { OrderId = Guid.NewGuid(), OrderDate = DateTime.Now, customer = customer });
             customer.orders.Add(new Orders() { OrderId = Guid.NewGuid(), OrderDate = DateTime.Now, customer = customer });
 

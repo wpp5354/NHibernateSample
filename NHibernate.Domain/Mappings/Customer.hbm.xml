@@ -16,9 +16,9 @@
       <property name="FirstName" column="FirstName" type="String" not-null="false"/>
     </component>
     <!--子实体负责维护关联关系-->
-    <set name="orders" table="Orders" generic="true" inverse="true" cascade="all">
+    <bag name="orders" table="Orders" generic="true" inverse="true" cascade="all">
       <key column="CustomerId" foreign-key="FK_Customer_Customer"></key>
       <one-to-many class="NHibernate.Domain.Entities.Orders,NHibernate.Domain"/>
-    </set>
+    </bag>
   </class>
 </hibernate-mapping>

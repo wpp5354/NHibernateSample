@@ -38,5 +38,43 @@ namespace NHibernate.Business
         {
             return _customerData.SaveOrUpdateByTrans(customer);
         }
+
+        public List<Customer> GetCustomersOrders(Guid customerId)
+        {
+            var list = _customerData.GetCustomersOrders(customerId);
+            return (List<Customer>)list;
+        }
+
+        public List<Customer> GetCustomersOrdersByHQL(Guid customerId)
+        {
+            var list = _customerData.GetCustomersOrdersByHQL(customerId);
+            return (List<Customer>)list;
+        }
+
+        public List<Customer> GetCustomerOrdersProductsBySQL(Guid customerId)
+        {
+            var list = _customerData.GetCustomerOrdersProductsBySQL(customerId);
+
+            return (List<Customer>)list;
+        }
+
+        public List<Customer> GetCustomerOrdersProductsByHQL(Guid customerId)
+        {
+            var list = _customerData.GetCustomerOrdersProductsByHQL(customerId);
+
+            return (List<Customer>)list;
+        }
+
+        public List<Customer> GetCustomerOrdersProductsByCriteriaAPI(Guid customerId)
+        {
+            var list = _customerData.GetCustomerOrdersProductsByCriteriaAPI(customerId);
+
+            return (List<Customer>)list;
+        }
+
+        public Customer GetCustomerByLazyLoad(Guid customerId)
+        {
+            return _customerData.GetCustomerByLazyLoad(customerId);
+        }
     }
 }

@@ -23,5 +23,12 @@ namespace NHibernateSample
                 return false;
             }
         }
+
+        public Orders GetOrderByLazyLoad(Guid orderId)
+        {
+            var session = SessionManager.GetSession();
+
+            return session.Get<Orders>(orderId);
+        }
     }
 }

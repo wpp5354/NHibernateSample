@@ -13,5 +13,7 @@ namespace NHibernate.Domain.Entities
         public virtual DateTime OrderDate { get; set; }
 
         public virtual Customer customer { get; set; }
+
+        public virtual IList<Product> Products { get; set; }
     }
 }

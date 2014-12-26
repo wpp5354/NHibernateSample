@@ -103,5 +103,70 @@ namespace NHibernateSample
             criteria.SetMaxResults(count);
             return criteria.List<Customer>();
         }
+
+        public IList<Customer> GetCustomersOrders(Guid customerId)
+        {
+            ISession session = SessionManager.GetSession();
+
+            return session.CreateSQLQuery("select distinct c.*,o.* from Customer c inner join orders o on c.CustomerId=o.CustomerId where c.CustomerId=:id")
+                    .AddEntity("Customer", typeof(Customer))
+                    .SetGuid("id", customerId)
+                    .List<Customer>();
+        }
+
+        public IList<Customer> GetCustomersOrdersByHQL(Guid customerId)
+        {
+            ISession session = SessionManager.GetSession();
+            return session.CreateQuery("select c from Customer c inner join c.orders where c.Id=:id")
+                .SetGuid("id", customerId)
+                .List<Customer>();
+        }
+
+        public IList<Customer> GetCustomerOrdersProductsBySQL(Guid customerId)
+        {
+            ISession session = SessionManager.GetSession();
+
+            return session.CreateSQLQuery("select distinct c.* from Customer c " +
+                                           "inner join Orders o on c.CustomerId=o.CustomerId " +
+                                           "inner join OrderProduct op on o.OrderId=op.OrderId " +
+                                           "inner join Product p on op.ProductId=p.ProductId where c.CustomerId=:id")
+                                           .AddEntity("Customer", typeof(Customer))
+                                           .SetGuid("id", customerId)
+                                           .List<Customer>();
+        }
+
+        public IList<Customer> GetCustomerOrdersProductsByHQL(Guid customerId)
+        {
+            ISession session = SessionManager.GetSession();
+
+            return session.CreateQuery("select distinct c from Customer c inner join c.orders o inner join o.Products where c.Id=:id")
+                                        .SetGuid("id", customerId)
+                                        .List<Customer>();
+        }
+
+        public IList<Customer> GetCustomerOrdersProductsByCriteriaAPI(Guid customerId)
+        {
+            ISession session = SessionManager.GetSession();
+
+            return session.CreateCriteria(typeof(Customer))
+                .Add(Restrictions.Eq("Id", customerId))
+                .CreateCriteria("orders")
+                .CreateCriteria("Products")
+                .List<Customer>();
+        }
+
+
+        /// <summary>
+        /// 采用延迟加载的方式获得用户信息
+        /// </summary>
+        /// <param name="customerId"></param>
+        /// <returns></returns>
+        public Customer GetCustomerByLazyLoad(Guid customerId)
+        {
+            ISession session = SessionManager.GetSession();
+
+            return session.Get<Customer>(customerId);
+
+        }
     }
 }

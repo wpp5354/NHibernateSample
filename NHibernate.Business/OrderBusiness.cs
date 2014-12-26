@@ -1,4 +1,5 @@
-﻿using NHibernate.Domain.Entities;
+﻿using System;
+using NHibernate.Domain.Entities;
 using NHibernateSample;
 
 namespace NHibernate.Business
@@ -13,6 +14,11 @@ namespace NHibernate.Business
         public bool AddOrder(Orders order)
         {
             return _orderData.AddOrder(order);
+        }
+
+        public Orders GetOrderByLazyLoad(Guid orderId)
+        {
+            return _orderData.GetOrderByLazyLoad(orderId);
         }
     }
 }
